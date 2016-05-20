@@ -46,9 +46,9 @@
                 %endif
             </table>
         </div>
-        
+
         <h1 style="clear:both;">${_(u'Delivery Order') } ${picking.name}</h1>
-        
+
         <table class="basic_table" width="100%">
             <tr>
                 <td style="font-weight:bold;">${_("Contact")}</td>
@@ -67,7 +67,7 @@
                 <td>${picking.sale_id and picking.sale_id.incoterm and picking.sale_id.incoterm.name or ''}</td>
             </tr>
         </table>
-    
+
         <table class="list_sale_table" width="100%" style="margin-top: 20px;">
             <thead>
                 <tr>
@@ -85,7 +85,7 @@
                 </tr>
             %endfor
         </table>
-        
+
         <br/>
         %if picking.note :
             <p class="std_text">${picking.note | carriage_returns}</p>

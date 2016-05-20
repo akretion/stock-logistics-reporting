@@ -29,6 +29,15 @@
             report_type="webkit"
             header="True"
             webkit_header="base_headers_webkit.base_reports_portrait_header" />
+    <report id="delivery.report_shipping"
+            name="webkit.delivery_order"
+            auto="False"
+            model="stock.picking.out"
+            file="stock_picking_webkit/report/delivery_order.mako"
+            string="Delivery Order"
+            report_type="webkit"
+            header="True"
+            webkit_header="base_headers_webkit.base_reports_portrait_header" />
 
   </data>
 </openerp>
